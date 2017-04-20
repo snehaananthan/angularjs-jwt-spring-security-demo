@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello AngularJS</title>
+
+	<!-- 
+      Automatically include Bower components. Use the "sources" object in your bower.json
+      to specify which source files are which.
+    -->
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+
+	<style type="text/css">
+	[ng\:cloak], [ng-cloak], .ng-cloak {
+	  display: none !important;
+	}
+	</style>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular/index.js"></script>
+	<base href="/" >
+</head>
+
+<body ng-app="app">
+    
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-router/src/common.js"></script>
+    <script src="bower_components/angular-ui-router/src/resolve.js"></script>
+    <script src="bower_components/angular-ui-router/src/state.js"></script>
+    <script src="bower_components/angular-ui-router/src/stateDirectives.js"></script>
+    <script src="bower_components/angular-ui-router/src/stateFilters.js"></script>
+    <script src="bower_components/angular-ui-router/src/templateFactory.js"></script>
+    <script src="bower_components/angular-ui-router/src/urlMatcherFactory.js"></script>
+    <script src="bower_components/angular-ui-router/src/urlRouter.js"></script>
+    <script src="bower_components/angular-ui-router/src/view.js"></script>
+    <script src="bower_components/angular-ui-router/src/viewDirective.js"></script>
+    <script src="bower_components/angular-ui-router/src/viewScroll.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/npm.js"></script>
+    <script src="bower_components/bootstrap/grunt/bs-commonjs-generator.js"></script>
+    <script src="bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js"></script>
+    <script src="bower_components/bootstrap/grunt/bs-lessdoc-parser.js"></script>
+    <script src="bower_components/bootstrap/grunt/bs-raw-files-generator.js"></script>
+    <script src="bower_components/bootstrap/grunt/change-version.js"></script>
+    <script src="bower_components/bootstrap/Gruntfile.js"></script>
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/package.js"></script>
+    <script src="bower_components/jquery/dist/core.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.slim.js"></script>
+    <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="bower_components/jquery/external/sizzle/dist/sizzle.js"></script>
+    <script src="bower_components/jquery/external/sizzle/dist/sizzle.min.js"></script>
+    <script src="bower_components/jquery/src/ajax.js"></script>
+    <script src="bower_components/jquery/src/ajax/jsonp.js"></script>
+    <script src="bower_components/jquery/src/ajax/load.js"></script>
+    <script src="bower_components/jquery/src/ajax/parseXML.js"></script>
+    <script src="bower_components/jquery/src/ajax/script.js"></script>
+    <script src="bower_components/jquery/src/ajax/var/location.js"></script>
+    <script src="bower_components/jquery/src/ajax/var/nonce.js"></script>
+    <script src="bower_components/jquery/src/ajax/var/rquery.js"></script>
+    <script src="bower_components/jquery/src/ajax/xhr.js"></script>
+    <script src="bower_components/jquery/src/attributes.js"></script>
+    <script src="bower_components/jquery/src/attributes/attr.js"></script>
+    <script src="bower_components/jquery/src/attributes/classes.js"></script>
+    <script src="bower_components/jquery/src/attributes/prop.js"></script>
+    <script src="bower_components/jquery/src/attributes/support.js"></script>
+    <script src="bower_components/jquery/src/attributes/val.js"></script>
+    <script src="bower_components/jquery/src/callbacks.js"></script>
+    <script src="bower_components/jquery/src/core.js"></script>
+    <script src="bower_components/jquery/src/core/access.js"></script>
+    <script src="bower_components/jquery/src/core/DOMEval.js"></script>
+    <script src="bower_components/jquery/src/core/init.js"></script>
+    <script src="bower_components/jquery/src/core/parseHTML.js"></script>
+    <script src="bower_components/jquery/src/core/ready-no-deferred.js"></script>
+    <script src="bower_components/jquery/src/core/ready.js"></script>
+    <script src="bower_components/jquery/src/core/readyException.js"></script>
+    <script src="bower_components/jquery/src/core/stripAndCollapse.js"></script>
+    <script src="bower_components/jquery/src/core/support.js"></script>
+    <script src="bower_components/jquery/src/core/var/rsingleTag.js"></script>
+    <script src="bower_components/jquery/src/css.js"></script>
+    <script src="bower_components/jquery/src/css/addGetHookIf.js"></script>
+    <script src="bower_components/jquery/src/css/adjustCSS.js"></script>
+    <script src="bower_components/jquery/src/css/curCSS.js"></script>
+    <script src="bower_components/jquery/src/css/hiddenVisibleSelectors.js"></script>
+    <script src="bower_components/jquery/src/css/showHide.js"></script>
+    <script src="bower_components/jquery/src/css/support.js"></script>
+    <script src="bower_components/jquery/src/css/var/cssExpand.js"></script>
+    <script src="bower_components/jquery/src/css/var/getStyles.js"></script>
+    <script src="bower_components/jquery/src/css/var/isHiddenWithinTree.js"></script>
+    <script src="bower_components/jquery/src/css/var/rmargin.js"></script>
+    <script src="bower_components/jquery/src/css/var/rnumnonpx.js"></script>
+    <script src="bower_components/jquery/src/css/var/swap.js"></script>
+    <script src="bower_components/jquery/src/data.js"></script>
+    <script src="bower_components/jquery/src/data/Data.js"></script>
+    <script src="bower_components/jquery/src/data/var/acceptData.js"></script>
+    <script src="bower_components/jquery/src/data/var/dataPriv.js"></script>
+    <script src="bower_components/jquery/src/data/var/dataUser.js"></script>
+    <script src="bower_components/jquery/src/deferred.js"></script>
+    <script src="bower_components/jquery/src/deferred/exceptionHook.js"></script>
+    <script src="bower_components/jquery/src/deprecated.js"></script>
+    <script src="bower_components/jquery/src/dimensions.js"></script>
+    <script src="bower_components/jquery/src/effects.js"></script>
+    <script src="bower_components/jquery/src/effects/animatedSelector.js"></script>
+    <script src="bower_components/jquery/src/effects/Tween.js"></script>
+    <script src="bower_components/jquery/src/event.js"></script>
+    <script src="bower_components/jquery/src/event/ajax.js"></script>
+    <script src="bower_components/jquery/src/event/alias.js"></script>
+    <script src="bower_components/jquery/src/event/focusin.js"></script>
+    <script src="bower_components/jquery/src/event/support.js"></script>
+    <script src="bower_components/jquery/src/event/trigger.js"></script>
+    <script src="bower_components/jquery/src/exports/amd.js"></script>
+    <script src="bower_components/jquery/src/exports/global.js"></script>
+    <script src="bower_components/jquery/src/jquery.js"></script>
+    <script src="bower_components/jquery/src/manipulation.js"></script>
+    <script src="bower_components/jquery/src/manipulation/_evalUrl.js"></script>
+    <script src="bower_components/jquery/src/manipulation/buildFragment.js"></script>
+    <script src="bower_components/jquery/src/manipulation/getAll.js"></script>
+    <script src="bower_components/jquery/src/manipulation/setGlobalEval.js"></script>
+    <script src="bower_components/jquery/src/manipulation/support.js"></script>
+    <script src="bower_components/jquery/src/manipulation/var/rcheckableType.js"></script>
+    <script src="bower_components/jquery/src/manipulation/var/rscriptType.js"></script>
+    <script src="bower_components/jquery/src/manipulation/var/rtagName.js"></script>
+    <script src="bower_components/jquery/src/manipulation/wrapMap.js"></script>
+    <script src="bower_components/jquery/src/offset.js"></script>
+    <script src="bower_components/jquery/src/queue.js"></script>
+    <script src="bower_components/jquery/src/queue/delay.js"></script>
+    <script src="bower_components/jquery/src/selector-native.js"></script>
+    <script src="bower_components/jquery/src/selector-sizzle.js"></script>
+    <script src="bower_components/jquery/src/selector.js"></script>
+    <script src="bower_components/jquery/src/serialize.js"></script>
+    <script src="bower_components/jquery/src/traversing.js"></script>
+    <script src="bower_components/jquery/src/traversing/findFilter.js"></script>
+    <script src="bower_components/jquery/src/traversing/var/dir.js"></script>
+    <script src="bower_components/jquery/src/traversing/var/rneedsContext.js"></script>
+    <script src="bower_components/jquery/src/traversing/var/siblings.js"></script>
+    <script src="bower_components/jquery/src/var/arr.js"></script>
+    <script src="bower_components/jquery/src/var/class2type.js"></script>
+    <script src="bower_components/jquery/src/var/concat.js"></script>
+    <script src="bower_components/jquery/src/var/document.js"></script>
+    <script src="bower_components/jquery/src/var/documentElement.js"></script>
+    <script src="bower_components/jquery/src/var/fnToString.js"></script>
+    <script src="bower_components/jquery/src/var/getProto.js"></script>
+    <script src="bower_components/jquery/src/var/hasOwn.js"></script>
+    <script src="bower_components/jquery/src/var/indexOf.js"></script>
+    <script src="bower_components/jquery/src/var/ObjectFunctionString.js"></script>
+    <script src="bower_components/jquery/src/var/pnum.js"></script>
+    <script src="bower_components/jquery/src/var/push.js"></script>
+    <script src="bower_components/jquery/src/var/rcssNum.js"></script>
+    <script src="bower_components/jquery/src/var/rnothtmlwhite.js"></script>
+    <script src="bower_components/jquery/src/var/slice.js"></script>
+    <script src="bower_components/jquery/src/var/support.js"></script>
+    <script src="bower_components/jquery/src/var/toString.js"></script>
+    <script src="bower_components/jquery/src/wrap.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-cookies/index.js"></script>
+    
+    
+    <script src="js/config.js"></script>
+    <script src="js/loginCtrl.js"></script>
+    <script src="js/resourceCtrl.js"></script>
+    
+    <div ng-controller="loginCtrl as login" class="container">
+		<ul class="nav nav-pills" role="tablist">
+			<!-- <li ng-hide="authenticated"><a ui-sref="login">login</a></li> -->
+			<li ng-show="authenticated"><a href="" ng-click="login.logout()">logout</a></li>
+		</ul>
+	</div>
+	<div class="container">
+	    <h1>Welcome to the Spring-Angular sample!!</h1>
+	    <!-- <div>
+	    	<button class="btn btn-primary" ng-click="resource.getProtectedResource()">Get Protected Data</button>
+	    </div> -->
+	    <div ui-view></div>
+	</div>
+	
+</body>
+</html>
