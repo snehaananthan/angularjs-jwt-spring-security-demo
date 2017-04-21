@@ -4,8 +4,6 @@
 This is a demo of a Spring boot application with JDBC authentication of Spring Security along with JSON Web Token (JWT) authorization (with CSRF) with AngularJS front-end. This is just a demo application with two simple UI pages.
 One, a login page. Two, a Greeting page. And a logout page. The Greeting page appears once the user is authenticated. The subsequent interactions are based on JWT authorization (using [JWT library for Java](https://github.com/jwtk/jjwt)).
 
-This is purely an inspiration from https://github.com/szerhusenBC/jwt-spring-security-demo. Thanks to the author.
-
 ## Pre-requisites
 * Java 1.8
 * MySQL server (v5.7)
@@ -180,5 +178,7 @@ Since our application's security is strictly controlled by the URL patterns adde
 
 That's all about this application. Please share your feedback, if any. Any questions, please post as comments. Cheers! :)
 
+### References
+https://github.com/szerhusenBC/jwt-spring-security-demo
 
 
