@@ -1,6 +1,6 @@
 app.controller('resourceCtrl', function($http, $cookies) {
 	  var self = this;
-	  $http.get('/resource').then(function(response) {
+	  $http.get('/secure/resource').then(function(response) {
 		    self.greeting = response.data;
 	  });
 //	  var config = {
@@ -13,4 +13,4 @@ app.controller('resourceCtrl', function($http, $cookies) {
 //			    self.greeting = response.data;
 //		  });
 //	  };
-  })
+  });

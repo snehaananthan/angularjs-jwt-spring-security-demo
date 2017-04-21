@@ -20,12 +20,12 @@ app.controller('loginCtrl', function($rootScope, $http, $state, $cookies) {
 	        } else {
 	          $rootScope.authenticated = false;
 	        }
-	        callback && callback();
+	        callback();
 	 	}, function() {
 	        $rootScope.authenticated = false;
-	        callback && callback();
+	        callback();
 	    });
-	}		
+	};		
 
     self.login = function() {
         authenticate(self.credentials, function() {
@@ -44,6 +44,6 @@ app.controller('loginCtrl', function($rootScope, $http, $state, $cookies) {
 	    $rootScope.authenticated = false;
 	    $state.go('logout');
 	  });
-	}
+	};
      
-  })
+  });

@@ -66,7 +66,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		http
-			// don't create session
 			.exceptionHandling().authenticationEntryPoint(jwtAuthEntryPoint)
 			.and()
 	        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -82,30 +81,20 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 						"/bower_components/**", 
 						"/html/**", 
 						"/images/**").permitAll()
-//				.antMatchers("/admin/**").hasAuthority("ADMIN")
 				.anyRequest()
 				.authenticated()
 				.and()
-//				.csrf().disable()
 				.csrf()
 		        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
 		        .and()
 				.formLogin()
 				.loginPage("/login")
 				.permitAll()
-//				.loginProcessingUrl("/authenticate")
-//				.failureUrl("/login?error=true")
-//				.defaultSuccessUrl("/admin/home")
-//				.usernameParameter("username")
-//				.passwordParameter("password")
 				.and()
 				.logout()
 			    .logoutUrl("/logout")
 			    .logoutSuccessHandler(new HttpStatusReturningLogoutSuccessHandler())
 			    .deleteCookies("XSRF_TOKEN", "AuthToken");
-//				.and().exceptionHandling()
-//				.accessDeniedPage("/access-denied")
-				;
 		
 		// Custom JWT based security filter
 		http.addFilterBefore(jwtFilterBean(), UsernamePasswordAuthenticationFilter.class);
@@ -114,10 +103,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.headers().cacheControl();
 	}
 	
-//	@Override
-//	public void configure(WebSecurity web) throws Exception {
-//	    web
-//	       .ignoring()
-//	       .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/bower_components/**", "/html/**", "/images/**");
-//	}
 }

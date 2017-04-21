@@ -183,7 +183,7 @@
     
     <div ng-controller="loginCtrl as login" class="container">
 		<ul class="nav nav-pills" role="tablist">
-			<!-- <li ng-hide="authenticated"><a ui-sref="login">login</a></li> -->
+			<li ng-hide="authenticated"><a ui-sref="login">login</a></li>
 			<li ng-show="authenticated"><a href="" ng-click="login.logout()">logout</a></li>
 		</ul>
 	</div>
