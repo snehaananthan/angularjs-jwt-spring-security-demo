@@ -180,5 +180,10 @@ That's all about this application. Please share your feedback, if any. Any quest
 
 ### References
 https://github.com/szerhusenBC/jwt-spring-security-demo
+https://www.jamesward.com/2013/05/13/securing-single-page-apps-and-rest-services
+https://drissamri.be/blog/java/enable-https-in-spring-boot/
+https://medium.com/@gustavo.ponce.ch/spring-boot-spring-mvc-spring-security-mysql-a5d8545d837d
+https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java
+https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_api_gateway_pattern_angular_js_and_spring_security_part_iv
 
 
