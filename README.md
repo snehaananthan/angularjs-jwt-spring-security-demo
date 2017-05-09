@@ -176,7 +176,9 @@ By default, the `sources` property is not present in a bower.json file.
 
 Since our application's security is strictly controlled by the URL patterns added in the Spring security configuration properties, it's a good practice to use `$locationProvider.html5Mode(true)` in our angular app's config block in `config.js`. And a `<base href="/">` element in our index.html. Here's a nice [article](https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag) on why we include these.
 
-That's all about this application. Happy learning. Cheers! :)
+That's all about this application. Please leave any feedback/comments on https://snehaananthan.wordpress.com/2017/04/28/angularjs-jdbc-authentication-jwt-spring-security-demo/. 
+
+Cheers! :)
 
 ### References
 * https://github.com/szerhusenBC/jwt-spring-security-demo
